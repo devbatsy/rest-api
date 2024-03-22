@@ -62,7 +62,7 @@ sydDOM.mainPage_parent = () =>{
 
 sydDOM.mainPageInput = () =>{
     searchInputMatch = (elem) =>{
-        const regSearch = new RegExp(`\^${elem.value}`);
+        const regSearch = new RegExp(`\^${elem.value.toLowerCase()}`);
         let matchedBool = false;
         const CsearchBD = getState('searchBD');
         CsearchBD.match = []
