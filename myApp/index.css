@@ -1,0 +1,36 @@
+*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+    transition: background linear .3s;
+}
+::-webkit-scrollbar
+{
+    width: 2px;
+    height: 80%;
+    opacity:.1;
+}
+::-webkit-scrollbar-track
+{
+    background:transparent;
+}
+::-webkit-scrollbar-thumb
+{
+    background-color:hsl(0, 0%, 52%);
+    width: 2px;
+}
+::-webkit-scrollbar:hover ::-webkit-scrollbar-thumb{
+    width: 2px;
+}
+.country{
+    transition-property: transform;
+}
+.country:hover{
+    transform: scale(1.03);
+}
+/* .drpClick:hover{
+    background:hsl(0, 0%, 98%);
+} */
+#dropCont:active{
+    transform: scale(1.03);
+}
